@@ -3,51 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Place</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Palayur Mar Thoma Church</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
         header {
-            background-color: #343a40;
-            color: white;
-            padding: 1rem;
+            background-color: #004d40;
+            color: #fff;
+            padding: 10px 20px;
             text-align: center;
         }
+
         nav {
-            margin: 20px;
-            text-align: center;
+            background-color: #00796b;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
         }
+
         nav a {
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            color: #007bff;
+            font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
-        main {
+
+        .container {
             padding: 20px;
-            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #004d40;
+        }
+
+        .home, .about {
+            margin-bottom: 30px;
+        }
+
+        .about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to St.Thomas Church</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-        </nav>
+        <h1>Palayur Mar Thoma Church</h1>
     </header>
-    <main>
-        <p>Discover the history and beauty of the first church in India, established by St. Thomas in 52 AD.          </p>
-    </main>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="home">
+            <h2>Welcome to Palayur Mar Thoma Church</h2>
+            <p>
+                Located in the scenic Thrissur district of Kerala, Palayur Mar Thoma Church is a beacon of history and spirituality. 
+                Established by St. Thomas in 52 AD, this church marks the introduction of Christianity in India.
+            </p>
+        </section>
+        <section id="about" class="about">
+            <h2>About the Church</h2>
+            <img src="placeholder.jpg" alt="Palayur Mar Thoma Church">
+            <p>
+                Palayur Mar Thoma Church, one of the Ēḻarappaḷḷikaḷ (seven major churches), is a testimony to the Apostolic legacy 
+                of St. Thomas. The church's rich history, from the first baptism performed in India to its role in spreading Christianity, 
+                attracts visitors from around the globe. The preserved ancient structure and the renovated surroundings beautifully 
+                narrate the journey of faith spanning centuries.
+            </p>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 My Favorite Place</p>
     </footer>
